@@ -56,6 +56,20 @@ TARGET_KERNEL_CONFIG := radioactive_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
+# Optimizations
+STRICT_ALIASING := true
+CLANG_O3 := true
+ENABLE_GCCONLY := false
+GRAPHITE_OPTS := false
+USE_PIPE := true  
+ENABLE_SANITIZE := true
+CORTEX_TUNINGS := true
+POLLY_OPTIMIZATION := true
+ENABLE_PTHREAD := true
+ENABLE_IPA_ANALYSER := true
+ENABLE_GOMP := true
+ENABLE_EXTRAGCC := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 

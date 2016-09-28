@@ -52,23 +52,9 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := radioactive_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
-#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-
-# Optimizations
-STRICT_ALIASING := true
-CLANG_O3 := true
-ENABLE_GCCONLY := false
-GRAPHITE_OPTS := false
-USE_PIPE := true  
-ENABLE_SANITIZE := true
-CORTEX_TUNINGS := true
-POLLY_OPTIMIZATION := true
-ENABLE_PTHREAD := true
-ENABLE_IPA_ANALYSER := true
-ENABLE_GOMP := true
-ENABLE_EXTRAGCC := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
